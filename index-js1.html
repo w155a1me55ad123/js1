@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js-microsoft</title>
+    <link rel="stylesheet" href="css/style3.css">
+
+    <!-- Bootstrap css -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div>
+    <div id="id0">
+        <center>><div id="id1">
+            <button type="button" class="btn btn-default btn-md" onclick="bold()">
+                <h3>
+                    <b>B</b>
+                </h3>
+            </button>
+            <button type="button"  class="btn btn-default btn-md" onclick="italic()">
+                <h3>
+                    <i>I</i>
+                </h3>
+            </button>
+            <button type="button"  class="btn btn-default btn-md" onclick="inderline()">
+                <h3>
+                    <ins>U</ins>
+                </h3>
+            </button>
+            <select id="fstyle" class="btn btn-default dropdown-toggle" onchange="fstyle()"> 
+                
+                 <option>arial</option>
+                 <option>time new roman</option>
+                 <option>comic sans MS</option>
+                 <option> verdana</option>
+                 
+            </select>
+            <select id="fsize" class="btn btn-default dropdown-toggle" onchange="fsize()"> 
+                <option>20px</option>
+                <option>30px</option>
+                 <option>40px</option>
+                 <option>50px</option>
+                 <option>60px</option>
+                 
+            </select>    
+        </div></center>
+            
+            
+           
+        
+            <p id="P">PARAGRAPH<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ducimus in optio maiores consequuntur itaque laudantium! Porro mollitia sint, minima maxime maiores, nam, corporis quia assumenda dolore soluta ullam officiis.</p>
+        
+    
+    </div>
+    <script>
+       
+    </script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script>
+function bold() {
+    document.getElementById("P").style.fontWeight = "bold";
+}
+function italic() {
+    document.getElementById("P").style.fontStyle = "italic";
+}
+function inderline() {
+    document.getElementById("P").style.textDecoration = "underline";
+}
+function fstyle(){
+     document.getElementById("P").style.fontFamily=document.getElementById("fstyle").value;
+}
+function fsize(){
+     document.getElementById("P").style.fontSize=document.getElementById("fsize").value;
+}
+
+</script>
+<script src="js/main.js"></script>
+
+</html>
